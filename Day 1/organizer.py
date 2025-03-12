@@ -58,6 +58,7 @@ def organize(directory):
                     logger.info(f"✅ Moved {filename} -> {new_path}")
                 except Exception as exp:
                     logger.error(f"Oops!! Error in moving {filename}: {exp}")
+                    
     except Exception as exp:
         logger.critical(f"An Unexpected Error: {exp}", exc_info=True)
         click.echo("❌ An unexpected error occurred. Check 'organizer.log' for details.")
