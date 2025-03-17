@@ -13,7 +13,7 @@ data["Rating"] = data["Rating"].astype(float)
 st.write("Here's the dataset:")
 st.write(data)
 
-# Add a slider to filter by age
+# Add a slider to filter by Rating
 rating_filter = st.slider("Filter by Rating", min_value=0, max_value=10, value=(0, 10))
 
 # Filter the data based on the slider
